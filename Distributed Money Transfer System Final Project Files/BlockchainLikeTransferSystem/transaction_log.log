@@ -1,0 +1,17 @@
+[2026-10-08 21:51:24] Transaction enqueued: Txn[sender=4, receiver=2, amount=500,00, createdAt=2026-10-08 21:51:24, approvedAt=null, approvers=[], approvals={}]
+[2026-10-08 21:51:27] [TRANSACTION STARTED] Txn[sender=3, receiver=4, amount=5000,00, createdAt=2026-10-08 21:51:17, approvedAt=null, approvers=[], approvals={}]
+[2026-10-08 21:51:27] [APPROVERS] [2]
+[2026-10-08 21:51:27]   Approver 2: REJECTED
+[2026-10-08 21:51:27] [CANCELLED] sender=3 receiver=4 amount=5000,00 createdAt=2026-10-08 21:51:17 reason=insufficient balance or rejected by approver
+[2026-10-08 21:51:37] [TRANSACTION STARTED] Txn[sender=1, receiver=6, amount=100,00, createdAt=2026-10-08 21:51:17, approvedAt=null, approvers=[], approvals={}]
+[2026-10-08 21:51:37] [APPROVERS] [2, 4, 5]
+[2026-10-08 21:51:37]   Approver 2: APPROVED
+[2026-10-08 21:51:37]   Approver 4: APPROVED
+[2026-10-08 21:51:37]   Approver 5: APPROVED
+[2026-10-08 21:51:37] [CONFIRMED] Transaction written to history: Txn[sender=1, receiver=6, amount=100,00, createdAt=2026-10-08 21:51:17, approvedAt=2026-10-08 21:51:37, approvers=[2, 4, 5], approvals={2=true, 4=true, 5=true}]
+[2026-10-08 21:51:47] [TRANSACTION STARTED] Txn[sender=2, receiver=9, amount=150,00, createdAt=2026-10-08 21:51:17, approvedAt=null, approvers=[], approvals={}]
+[2026-10-08 21:51:47] [CANCELLED] sender=2 receiver=9 amount=150,00 createdAt=2026-10-08 21:51:17 reason=no path
+[2026-10-08 21:51:57] [TRANSACTION STARTED] Txn[sender=4, receiver=2, amount=500,00, createdAt=2026-10-08 21:51:24, approvedAt=null, approvers=[], approvals={}]
+[2026-10-08 21:51:57] [APPROVERS] [3]
+[2026-10-08 21:51:57]   Approver 3: APPROVED
+[2026-10-08 21:51:57] [CONFIRMED] Transaction written to history: Txn[sender=4, receiver=2, amount=500,00, createdAt=2026-10-08 21:51:24, approvedAt=2026-10-08 21:51:57, approvers=[3], approvals={3=true}]
